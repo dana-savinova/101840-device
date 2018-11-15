@@ -7,29 +7,29 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo.svg" width="164" height="36" alt="Логотип интернет-магазина гаджетов Девайс">
+        <svg xmlns="http://www.w3.org/2000/svg" width="164" height="36"><text transform="matrix(1.827 0 0 1.814 -2.319 34.511)" font-size="26.459" font-family="Gilroy" font-weight="800">DEVICE</text></svg>
       </a>
-      <nav class="page-header__search main-navigation">
-        <form class="site-search" id="search-form" action="https://echo.htmlacademy.ru/" method="get">
+      <nav class="main-navigation">
+        <form class="main-navigation__search site-search" id="search-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="search-field">Поиск по сайту</label>
           <input id="search-field" name="search" type="search" placeholder="Поиск по сайту">
         </form>
         <ul class="main-navigation__list user-navigation">
           <li class="user-navigation__item">
-            <a class="user-navigation__login" href="#">Войти</a>
+            <a class="user-navigation__link user-navigation__link--login" href="#">Войти</a>
           </li>
         </ul>
         <ul class="main-navigation__list shopping-navigation">
           <li class="shopping-navigation__item">
-            <a href="#">Сравнить</a>
+            <a class="shopping-navigation__link shopping-navigation__link--compare" href="#">Сравнить</a>
           </li>
           <li class="shopping-navigation__item">
-            <a href="#">Корзина</a>
+            <a class="shopping-navigation__link shopping-navigation__link--cart" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="main-navigation__list site-navigation">
           <li class="site-navigation__item">
-            <a href="#">Каталог товаров</a>
+            <a class="site-navigation__link" href="#">Каталог товаров</a>
             <ul class="site-navigation__list catalog-navigation">
               <li class="catalog-navigation__item">
                 <a href="#">Виртуальная реальность</a>
