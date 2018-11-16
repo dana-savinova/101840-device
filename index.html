@@ -67,63 +67,60 @@
       <h1 class="visually-hidden">DEVICE - интернет-магазин гаджетов</h1>
       <section class="promo">
         <h2 class="visually-hidden">Промо-блок</h2>
-        <ul class="promo-slider">
+        <ol class="promo__wrapper promo-slider">
           <li class="promo-slider__item">
             <h3 class="promo-slider__title">Делай селфи, как Бен Стиллер!</h3>
             <img class="promo-slider__image" src="img/slider-1.png" width="384" height="486" alt="Самая длинная селфи-палка">
             <p class="promo-slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <dl class="promo-slider__list spec-list">
+              <dt class="spec-list__name">Длина палки</dt>
+              <dd class="spec-list__value">8,5 м</dd>
+              <dt class="spec-list__name">Вес палки</dt>
+              <dd class="spec-list__value">5 кг</dd>
+              <dt class="spec-list__name">Материал</dt>
+              <dd class="spec-list__value">Карбон</dd>
+            </dl>
             <a class="promo-slider__button button" href="#">Подробнее</a>
-            <table class="promo-slider__table">
-              <tbody>
-                <tr>
-                  <th>Длина палки</th>
-                  <th>Вес палки</th>
-                  <th>Материал</th>
-                </tr>
-                <tr>
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
-                </tr>
-              </tbody>
-            </table>
           </li>
           <li class="promo-slider__item">
             <h3 class="promo-slider__title">Худеем правильно!</h3>
             <img class="promo-slider__img"  src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
             <p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <dl class="promo-slider__list spec-list">
+              <dt class="spec-list__name">Без подзарядки</dt>
+              <dd class="spec-list__value">48 часов</dd>
+            </dl>
             <a class="promo-slider__button button" href="#">Подробнее</a>
-            <table class="promo-slider__table">
-              <tbody>
-                <tr>
-                  <th>Без подзарядки</th>
-                </tr>
-                <tr>
-                  <td>48 часов</td>
-                </tr>
-              </tbody>
-            </table>
           </li>
           <li class="promo-slider__item">
             <h3 class="promo-slider__title">Порхает как бабочка, жалит как пчела!</h3>
             <img class="promo-slider__image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
             <p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <dl class="promo-slider__list spec-list">
+              <dt class="spec-list__name">Дальность полета</dt>
+              <dd class="spec-list__value">800 м</dd>
+              <dt class="spec-list__name">Радиус поражения</dt>
+              <dd class="spec-list__name">50 м</dd>
+            </dl>
             <a class="promo-slider__button button" href="#">Подробнее</a>
-            <table class="promo-slider__table">
-              <tbody>
-                <tr>
-                  <th>Дальность полета</th>
-                  <th>Радиус поражения</th>
-                </tr>
-                <tr>
-                  <td>800 м</td>
-                  <td>50 м</td>
-                </tr>
-              </tbody>
-            </table>
+          </li>
+        </ol>
+        <ul class="promo__controls controls-list">
+          <li class="controls-list__item">
+            <input class="visually-hidden" id="promo-1" name="promo" type="radio" value="promo-1" checked>
+            <label for="promo-1">Первый слайд</label>
+          </li>
+          <li class="controls-list__item">
+            <input class="visually-hidden" id="promo-2" name="promo" type="radio" value="promo-2">
+            <label for="promo-2">Второй слайд</label>
+          </li>
+          <li class="controls-list__item">
+            <input class="visually-hidden" id="promo-3" name="promo" type="radio" value="promo-3">
+            <label for="promo-3">Третий слайд</label>
           </li>
         </ul>
       </section>
     </main>
+    <footer class="main-footer"></footer>
   </body>
 </html>
