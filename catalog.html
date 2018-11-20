@@ -34,7 +34,7 @@
         </ul>
         <ul class="main-navigation__list site-navigation">
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Каталог товаров</a>
+            <a class="site-navigation__link" href="catalog.html">Каталог товаров</a>
             <ul class="site-navigation__list catalog-navigation">
               <li class="catalog-navigation__item">
                 <a class="catalog-navigation__link" href="#">Виртуальная реальность</a>
@@ -72,10 +72,10 @@
     <h1 class="page-inner__title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
-          <a  class="breadcrumbs__link" href="index.html">Главная</a>
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
          <li class="breadcrumbs__item">
-          <a  class="breadcrumbs__link" href="">Каталог товаров</a>
+          <a class="breadcrumbs__link" href="">Каталог товаров</a>
         </li>
          <li class="breadcrumbs__item">
           <a class="breadcrumbs__link">Моноподы для селфи</a>
@@ -83,7 +83,55 @@
       </ul>
     <section class="filters">
       <h2 class="filters___title">Фильтр:</h2>
-        <!-- - Тут будет форма - -->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filters__price">
+          <legend>Стоимость:</legend>
+<!--           <div class="range">
+            <span class="range__line"></span>
+          </div>
+          <span>от 0</span>
+          <span>до 5000</span> -->
+        </fieldset>
+        <fieldset class="filters__colors">
+          <legend>Цвет</legend>
+          <ul class="filters__list">
+            <li class="filters__item">
+              <input class="filters__input filters__input--checkbox visually-hidden" id="black" name="color" type="checkbox" value="black" checked>
+              <label class="filters__label-checkbox" for="black">Черный</label>
+            </li>
+            <li class="filters__item">
+              <input class="filters__input filters__input--checkbox visually-hidden" id="white" name="color" type="checkbox" value="white">
+              <label class="filters__label-checkbox" for="white">Белый</label>
+            </li>
+            <li class="filters__item">
+              <input class="filters__input filters__input--checkbox visually-hidden" id="blue" name="color" type="checkbox" value="blue" checked>
+              <label class="filters__label-checkbox" for="blue">Синий</label>
+            </li>
+            <li class="filters__item">
+              <input class="filters__input filters__input--checkbox visually-hidden" id="red" name="color" type="checkbox" value="red" checked>
+              <label class="filters__label-checkbox" for="red">Красный</label>
+            </li>
+            <li class="filters__item">
+              <input class="filters__input filters__input--checkbox visually-hidden" id="pink" name="color" type="checkbox" value="pink">
+              <label class="filters__label-checkbox" for="pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filters__bluetooth">
+          <legend>Bluetooth</legend>
+          <ul class="filters__list">
+            <li class="filters__item">
+              <input class="filters__input filters__input--radio visually-hidden" id="yes" name="bluetooth" value="yes" type="radio" checked>
+              <label class="filters__label-radio" for="yes">Есть</label>
+            </li>
+            <li class="filters__item">
+              <input class="filters__input filters__input--radio visually-hidden" id="no" name="bluetooth" value="no" type="radio">
+              <label class="filters__label-radio" for="no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submut">Показать</button>
+      </form>
     </section>
     <section class="sorter">
       <h2 class="sorter__title">Сортировка:</h2>
