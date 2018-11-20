@@ -75,7 +75,7 @@
           <a class="breadcrumbs__link" href="index.html">Главная</a>
         </li>
          <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="">Каталог товаров</a>
+          <a class="breadcrumbs__link" href="#">Каталог товаров</a>
         </li>
          <li class="breadcrumbs__item">
           <a class="breadcrumbs__link">Моноподы для селфи</a>
@@ -86,34 +86,30 @@
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filters__price">
           <legend>Стоимость:</legend>
-<!--           <div class="range">
-            <span class="range__line"></span>
-          </div>
-          <span>от 0</span>
-          <span>до 5000</span> -->
+<!--             здесь будет range стоимости -->
         </fieldset>
         <fieldset class="filters__colors">
           <legend>Цвет</legend>
           <ul class="filters__list">
             <li class="filters__item">
               <input class="filters__input filters__input--checkbox visually-hidden" id="black" name="color" type="checkbox" value="black" checked>
-              <label class="filters__label-checkbox" for="black">Черный</label>
+              <label class="filters__label filters__label--checkbox" for="black">Черный</label>
             </li>
             <li class="filters__item">
               <input class="filters__input filters__input--checkbox visually-hidden" id="white" name="color" type="checkbox" value="white">
-              <label class="filters__label-checkbox" for="white">Белый</label>
+              <label class="filters__label filters__label--checkbox" for="white">Белый</label>
             </li>
             <li class="filters__item">
               <input class="filters__input filters__input--checkbox visually-hidden" id="blue" name="color" type="checkbox" value="blue" checked>
-              <label class="filters__label-checkbox" for="blue">Синий</label>
+              <label class="filters__label filters__label--checkbox" for="blue">Синий</label>
             </li>
             <li class="filters__item">
               <input class="filters__input filters__input--checkbox visually-hidden" id="red" name="color" type="checkbox" value="red" checked>
-              <label class="filters__label-checkbox" for="red">Красный</label>
+              <label class="filters__label filters__label--checkbox" for="red">Красный</label>
             </li>
             <li class="filters__item">
               <input class="filters__input filters__input--checkbox visually-hidden" id="pink" name="color" type="checkbox" value="pink">
-              <label class="filters__label-checkbox" for="pink">Розовый</label>
+              <label class="filters__label filters__label--checkbox" for="pink">Розовый</label>
             </li>
           </ul>
         </fieldset>
@@ -122,34 +118,34 @@
           <ul class="filters__list">
             <li class="filters__item">
               <input class="filters__input filters__input--radio visually-hidden" id="yes" name="bluetooth" value="yes" type="radio" checked>
-              <label class="filters__label-radio" for="yes">Есть</label>
+              <label class="filters__label filters__label--radio" for="yes">Есть</label>
             </li>
             <li class="filters__item">
               <input class="filters__input filters__input--radio visually-hidden" id="no" name="bluetooth" value="no" type="radio">
-              <label class="filters__label-radio" for="no">Нет</label>
+              <label class="filters__label filters__label--radio" for="no">Нет</label>
             </li>
           </ul>
         </fieldset>
-        <button class="button" type="submit">Показать</button>
+        <button class="filters__button button" type="submit">Показать</button>
       </form>
     </section>
     <section class="sorter">
       <h2 class="sorter__title">Сортировка:</h2>
-      <ul class="sorter__list sorter-parametrs">
-        <li class="sorter-parametrs__item">
-          <a class="sorter-parametrs__link sorter-parametrs__link--active" href="#">По цене</a>
+      <ul class="sorter__list sorter-options">
+        <li class="sorter-options__item">
+          <a class="sorter-options__link sorter-options__link--active" href="#">По цене</a>
         </li>
-        <li class="sorter-parametrs__item">
-          <a class="sorter-parametrs__link" href="#">По типу</a>
+        <li class="sorter-options__item">
+          <a class="sorter-options__link" href="#">По типу</a>
         </li>
-        <li class="sorter-parametrs__item">
-          <a class="sorter-parametrs__link" href="#">По популярности</a>
+        <li class="sorter-options__item">
+          <a class="sorter-options__link" href="#">По популярности</a>
         </li>
       </ul>
       <ul class="sorter__list sorter-directions">
         <li class="sorter-directions__item">
           <a class="sorter-directions__link sorter-directions__link--up" href="#">
-            <span class="visually-hidden">Сортировать по возростанию</span>
+            <span class="visually-hidden">Сортировать по возрастанию</span>
           </a>
         </li>
         <li class="sorter-directions__item">
@@ -206,7 +202,7 @@
             <h3 class="product-card__title">Селфи-палка «Следуй за мной»</h3>
           </a>
           <a class="product-card__photo" href="#">
-            <img class="product-card__image" src="img/catalog/item-4.jpg" width="360" height="380" alt="Фото селфи-палку «Следуй за мной»">
+            <img class="product-card__image" src="img/catalog/item-4.jpg" width="360" height="380" alt="Фото селфи-палки «Следуй за мной»">
           </a>
           <b class="product-card__price">4900 руб.</b>
           <div class="product-card__hover-wrapper">
@@ -246,7 +242,7 @@
       </a>
       <ul class="user-navigation">
         <li class="user-navigation__item">
-          <a class="user-navigation__link user-navigation__link--profile" href="#">Валентин Петухов</a>
+          <a class="user-navigation__link user-navigation__link--yellow-profile" href="#">Валентин Петухов</a>
         </li>
         <li class="user-navigation__item">
           <a class="user-navigation__link user-navigation__link--logout" href="#">Выйти</a>
