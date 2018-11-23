@@ -10,3 +10,169 @@
     font-weight: normal;
     font-style: normal;
 }
+
+body {
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300; /* Light */
+  color: #464646;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.site-navigation {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 18px;
+  font-weight: 800; /* Extra Bold (Ultra Bold) */
+  line-height: 24px;
+  letter-spacing: 0.2em; /* 3.6px - при font-size: 18px;*/
+  text-transform: uppercase;
+}
+.user-navigation {
+  font-style: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+}
+
+.main-navigation__list,
+.site-navigation__list {
+  list-style: none;
+}
+
+.user-navigation__link,
+.shopping-navigation__link,
+.site-navigation__link {
+  color: #000;
+}
+
+.catalog-navigation__link {
+  color: #464646;
+}
+
+.page-header__logo:hover,
+.site-search__field:hover,
+.user-navigation__link:hover,
+.shopping-navigation__link:hover,
+.catalog-navigation__link:hover,
+.site-navigation__link:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo:active,
+.user-navigation__link:active,
+.shopping-navigation__link:active,
+.catalog-navigation__link:active,
+.site-navigation__link:active {
+  opacity: 0.3;
+}
+
+.promo-slider__title {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 47px;
+  font-weight: 800; /* Extra Bold (Ultra Bold) */
+  line-height: 56px;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.promo-slider__description {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300; /* Light */
+  letter-spacing: 0.01em;
+
+}
+
+.promo-slider__list {
+  margin: 0;
+  list-style: none;
+}
+
+.spec-list__name {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300; /* Light */
+  letter-spacing: 0.01em;
+}
+
+.spec-list__value {
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 36px;
+  font-weight: 300; /* Light */
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.slider-toggles {
+  list-style: none;
+}
+
+.popular-categories__list {
+  list-style: none;
+}
+
+.popular-categories__link {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 18px;
+  font-weight: 800; /* Extra Bold (Ultra Bold) */
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.popular-categories__link:active {
+  opacity: 0.3;
+}
+
+/*Тут будет стилизция вкладки с сервисами*/
+
+.brands__list {
+  list-style: none;
+}
+
+.brands__link {
+  border-top: none;
+}
+
+.brands__logo {
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+
+.brands__logo:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.about-us__title,
+.contacts__title {
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 47px;
+  font-weight: 800; /* Extra Bold (Ultra Bold) */
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.page-footer__image--yellow {
+  fill: #ffc600;
+}
