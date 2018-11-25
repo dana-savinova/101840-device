@@ -18,6 +18,7 @@
         <form class="main-navigation__search site-search" id="search-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="search-field">Поиск по сайту</label>
           <input class="site-search__field" id="search-field" name="search" type="search" placeholder="Поиск по сайту">
+          <button class="site-search__button" type="submit">Найти</button>
         </form>
         <ul class="main-navigation__list user-navigation">
           <li class="user-navigation__item">
@@ -112,16 +113,19 @@
         </ol>
         <ul class="features__toggles slider-toggles">
           <li class="slider-toggles__item">
-            <input class="visually-hidden" id="promo-1" name="promo" type="radio" value="promo-1" checked>
-            <label for="promo-1">Первый слайд</label>
+            <button class="slider-toggles__button" type="button">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
           </li>
           <li class="slider-toggles__item">
-            <input class="visually-hidden" id="promo-2" name="promo" type="radio" value="promo-2">
-            <label for="promo-2">Второй слайд</label>
+            <button class="slider-toggles__button" type="button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
           </li>
           <li class="slider-toggles__item">
-            <input class="visually-hidden" id="promo-3" name="promo" type="radio" value="promo-3">
-            <label for="promo-3">Третий слайд</label>
+            <button class="slider-toggles__button" type="button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
           </li>
         </ul>
       </section>
@@ -201,7 +205,7 @@
           </li>
         </ul>
       </section>
-       <section class="about-us">
+      <section class="about-us">
         <h2 class="about-us__title">О нас</h2>
         <div class="about-us__summary">
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
