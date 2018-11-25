@@ -48,9 +48,23 @@ a {
   letter-spacing: 0.01em;
 }
 
-.main-navigation__list,
-.site-navigation__list {
+.user-navigation,
+.site-navigation,
+.shopping-navigation,
+.catalog-navigation,
+.services-tab,
+.services-list,
+.brands__list
+ {
   list-style: none;
+}
+
+/*сетка*/
+.page-header {
+  margin: 0 auto;
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .user-navigation__link,
@@ -175,4 +189,28 @@ a {
 
 .page-footer__image--yellow {
   fill: #ffc600;
+}
+
+/* сетка */
+.container,
+.page-header,
+.features,
+.popular-categories,
+.brands {
+  margin: 0 auto;
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-header {
+  background-color: rgba(240, 190, 46, 0.5);
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+.page-footer {
+  background-color: #464646;
+  color: #ffffff;
 }
