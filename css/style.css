@@ -153,9 +153,11 @@ a {
   opacity: 0;
 }
 
-.site-search__field:focus ~ .site-search__button {
+.site-search__field:focus ~ .site-search__button,
+.site-search__button:focus {
   opacity: 1;
 }
+
 
 .site-search__button:hover {
   color: #ffffff;
