@@ -550,15 +550,19 @@ a {
   top: 314px;
   right: 61px;
   display: flex;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+
 }
 .slider-toggles__item {
   position: relative;
-  margin-right: 21px;
 }
 
 .slider-toggles__button {
+  display: inline-block;
+  vertical-align: middle;
   padding: 0;
-  margin: 0;
   width: 12px;
   height: 12px;
   border: 1px solid #050505;
@@ -570,10 +574,10 @@ a {
   content: "";
   position: absolute;
   top: 14px;
-  left: 4px;
+  left: 3px;
   z-index: 1;
-  width: 4px;
-  height: 4px;
+  width: 6px; /*-2px*/
+  height: 6px;
   border: 1px solid #050505;
   border-radius: 50%;
   background-color: #ffffff;
