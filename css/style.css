@@ -161,6 +161,7 @@ a {
   display: flex;
   width: 440px;
   height: 49px;
+  margin-right: auto;
 }
 
 .main-navigation__search::before {
@@ -233,7 +234,6 @@ a {
   display: flex;
   position: relative;
   width: 260px;
-  margin-left: auto;
 }
 
 .user-navigation__link {
@@ -324,7 +324,7 @@ a {
   flex-wrap: wrap;
 }
 
-.site-navigation__item:first-child {
+.site-navigation__item--catalog {
   margin-right: auto;
 }
 
