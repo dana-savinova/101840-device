@@ -1653,65 +1653,202 @@ a {
 
 
 /*catalog*/
-.page-inner__wrapper {
-  padding-left: 80px;
+.page-inner__title-wrapper {
+    margin-bottom: 44px;
+    padding-left: 80px;
 }
+
 .page-inner__title {
-  margin: 0;
-  margin-top: 32px;
-  margin-bottom: 19px;
-  padding: 0;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 19px;
+    padding: 0;
 
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 47px;
-  line-height: 48px;
-  letter-spacing: 0.01em;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
 
-  color: #000000;
-
+    color: #000000;
 }
+
 .breadcrumbs {
-  display: flex;
+    display: flex;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  list-style: none;
+    list-style: none;
 }
+
 .breadcrumbs__item:not(:last-child) {
-  position: relative;
+    position: relative;
 
-  margin-right: 18px;
-  padding-right: 20px;
+    margin-right: 18px;
+    padding-right: 20px;
 }
-.breadcrumbs__item:not(:last-child):after {
-  position: absolute;
-  top: 13px;
-  right: -2px;
-  content: "";
 
-  width: 6px;
-  height: 10px;
-  background-image: url(../img/nav-arrow.svg);
-  background-repeat: no-repeat;
+.breadcrumbs__item:not(:last-child):after {
+    position: absolute;
+    top: 13px;
+    right: -2px;
+
+    width: 6px;
+    height: 10px;
+
+    content: "";
+
+    background-image: url(../img/nav-arrow.svg);
+    background-repeat: no-repeat;
 }
 .breadcrumbs__link {
-  opacity: 0.3;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    letter-spacing: .01em;
 
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-  text-decoration: none;
-  color: #000000;
+    opacity: 0.3;
+    color: #000000;
 }
 
 .breadcrumbs__link:hover,
-.breadcrumbs__link:focus
- {
-  opacity: 0.6;
+.breadcrumbs__link:focus {
+    opacity: 0.6;
 }
 
 .breadcrumbs__link:active {
-  opacity: 0.1;
+    opacity: 0.1;
 }
 
+.page-inner__up-line {
+    background-image: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 50%, #ebebeb 50%, #ebebeb 100%);
+}
+
+.page-inner__down-line {
+    background-image: linear-gradient(to right, #efefef 0%, #efefef 50%, #fff 50%, #fff 100%);
+}
+
+.page-inner__wrapper {
+    display: flex;
+}
+
+.page-inner__left-column {
+    display: flex;
+
+    width: 329px;
+    padding-top: 24px;
+    padding-bottom: 22px;
+    padding-left: 60px;
+}
+
+.page-inner__filter-title {
+    z-index: 1;
+
+    display: block;
+
+    font-family: "Gilroy", "Arial Black", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+
+    color: #000000;
+    background-color: #dcdcdc;
+}
+.page-inner__right-column {
+    display: flex;
+    width: 831px;
+}
+
+.sorter {
+    display: flex;
+
+    width: 831px;
+    padding-left: 72px;
+
+    background-color: #ebebeb;
+
+    align-items: center;
+}
+.sorter__list {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.sorter__title {
+    z-index: 1;
+
+    margin: 0;
+    margin-right: 53px;
+    padding: 0;
+
+    font-family: "Gilroy", "Arial Black", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.sorter-options__link {
+    margin-right: 20px;
+    padding-right: 10px;
+
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+
+    opacity: 0.3;
+    color: #000000;
+}
+
+.sorter-options__link--active {
+    opacity: 1;
+}
+
+.sorter-directions {
+    display: flex;
+
+    margin-left: auto;
+}
+
+.sorter-directions__item:not(:last-child) {
+    margin-right: 18px;
+}
+
+.sorter-directions__link {
+    display: block;
+
+    width: 11px;
+    height: 10px;
+
+    opacity: 0.2;
+}
+
+.sorter-directions__link--up {
+    background-image: url(../img/icon-up-dir.svg);
+    background-repeat: no-repeat;
+}
+
+.sorter-directions__link--down {
+    background-image: url(../img/icon-down-dir.svg);
+    background-repeat: no-repeat;
+}
+
+.sorter-directions__link--active {
+    opacity: 1;
+}
+
+.filters {
+    background-color: #efefef;
+}
+
+.page-inner__right-column--white {
+    background-color: #ffffff;
+}
