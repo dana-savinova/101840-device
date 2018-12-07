@@ -328,12 +328,18 @@
     <section class="modal feedback">
       <h2 class="visually-hidden">Напишите нам:</h2>
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="feedback__name" for="user-name">Ваше имя:</label>
-        <input class="feedback__field feedback__field--input" id="user-name" name="name" type="text" placeholder="Имя Фамилия">
-        <label class="feedback__mail" for="user-mail">Ваш e-mail:</label>
-        <input class="feedback__field feedback__field--input" id="user-mail" name="email"  type="email" placeholder="email@example.com">
-        <label class="feedback__text" for="feedback-text">Текст письма:</label>
-        <textarea class="feedback__field feedback__field--textarea" id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
+        <div class="feedback__field-wrapper">
+          <label class="feedback__label" for="user-name">Ваше имя:</label>
+          <input class="feedback__field feedback__field--input" id="user-name" name="name" type="text" placeholder="Имя Фамилия">
+        </div>
+        <div class="feedback__field-wrapper">
+          <label class="feedback__label" for="user-mail">Ваш e-mail:</label>
+          <input class="feedback__field feedback__field--input" id="user-mail" name="email"  type="email" placeholder="email@example.com">
+        </div>
+        <div class="feedback__field-wrapper">
+          <label class="feedback__label" for="feedback-text">Текст письма:</label>
+          <textarea class="feedback__field feedback__field--textarea" id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
+        </div>
         <button class="feedback__button button" type="submit">Отправить</button>
       </form>
       <button class="feedback__close close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
