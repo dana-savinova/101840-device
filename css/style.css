@@ -706,11 +706,8 @@ a {
     align-items: center;
 }
 
-.slider-toggles__item {
-    position: relative;
-}
-
 .slider-toggles__button {
+    position: relative;
     display: inline-block;
 
     width: 12px;
@@ -727,8 +724,8 @@ a {
 .slider-toggles__button--current::after {
     position: absolute;
     z-index: 1;
-    top: 14px;
-    left: 3px;
+    top: 2px;
+    left: 2px;
 
     width: 6px;
     height: 6px;
