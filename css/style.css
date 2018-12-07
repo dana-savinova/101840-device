@@ -724,7 +724,7 @@ a {
     background-color: #ffffff;
 }
 
-.slider-toggles__item--current::after {
+.slider-toggles__button--current::after {
     position: absolute;
     z-index: 1;
     top: 14px;
