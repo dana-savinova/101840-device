@@ -1685,7 +1685,6 @@ a {
     position: relative;
 
     margin-right: 18px;
-    padding-right: 20px;
 }
 
 .breadcrumbs__item:not(:last-child):after {
@@ -1702,10 +1701,12 @@ a {
     background-repeat: no-repeat;
 }
 .breadcrumbs__link {
+    padding-right: 20px;
+
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
 
     opacity: 0.3;
     color: #000000;
@@ -1765,11 +1766,12 @@ a {
     display: flex;
 
     width: 831px;
+    padding-top: 24px;
     padding-left: 72px;
 
     background-color: #ebebeb;
 
-    align-items: center;
+    /*align-items: center;*/
 }
 .sorter__list {
     display: flex;
@@ -1795,9 +1797,12 @@ a {
 
     color: #000;
 }
+.sorter-options__item {
+  margin-right: 20px;
+}
 
 .sorter-options__link {
-    margin-right: 20px;
+    display: block;
     padding-right: 10px;
 
     font-size: 14px;
@@ -1826,7 +1831,7 @@ a {
     display: block;
 
     width: 11px;
-    height: 10px;
+    height: 18px;
 
     opacity: 0.2;
 }
@@ -1834,21 +1839,174 @@ a {
 .sorter-directions__link--up {
     background-image: url(../img/icon-up-dir.svg);
     background-repeat: no-repeat;
+    background-position-y: 6px;
 }
 
 .sorter-directions__link--down {
     background-image: url(../img/icon-down-dir.svg);
     background-repeat: no-repeat;
+    background-position-y: 6px;
 }
 
 .sorter-directions__link--active {
     opacity: 1;
 }
-
+/*фильтр*/
 .filters {
     background-color: #efefef;
 }
 
-.page-inner__right-column--white {
+/*список товаров и пагинация*/
+.page-inner__right-column--catalog {
+    display: flex;
+    flex-direction: column;
+
     background-color: #ffffff;
+
+}
+
+.catalog {
+  margin-bottom: 20px;
+  padding-top: 69px;
+  padding-left: 72px;
+}
+
+.catalog__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  flex-wrap: wrap;
+}
+.catalog__item:nth-child(odd) {
+  margin-right: 39px;
+}
+
+.product-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 360px;
+}
+
+.product-card__photo {
+  order: -1;
+}
+
+.product-card__image {
+  max-width: 360px;
+}
+
+.product-card__hover-wrapper {
+  position: absolute;
+  width: 360px;
+}
+
+.pagination {
+  margin-bottom: 76px;
+  padding-left: 72px;
+
+}
+
+.pagination__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  /*padding-left: 30px;
+  padding-right: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;*/
+
+  list-style: none;
+  justify-content: space-between;
+
+  background-color: #ebebeb;
+}
+
+.pagination__item:nth-child(2) {
+  margin-left: 15px;
+
+}
+/*.pagination__item {
+  margin-right: 28px;
+}*/
+
+.pagination__item:first-child {
+  margin-right: auto;
+}
+
+.pagination__item:last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.pagination__link {
+  display: block;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  color: rgba(0, 0, 0, 0.6);
+
+  outline: none;
+}
+
+.pagination__link:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination__link--previous,
+.pagination__link--next,
+.pagination__link--current {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination__link--previous {
+  padding-left: 30px;
+  padding-right: 25px;
+
+}
+
+.pagination__link--next {
+  padding-left: 32px;
+  padding-right: 26px;
+}
+
+.pagination__link--previous:hover,
+.pagination__link--next:hover {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination__link--previous:active,
+.pagination__link--next:active {
+  background-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.3);
+}
+/*styles for disable button*/
+.pagination__link--disable:hover {
+  background-color: transparent;
+}
+.pagination__link--disable:active {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+
 }
