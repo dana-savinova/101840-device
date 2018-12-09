@@ -131,13 +131,31 @@
         <div class="page-inner__left-column">
           <section class="filters">
             <h2 class="visually-hidden filters___title">Фильтр:</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
+            <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filters__fieldset">
-                <legend>Стоимость:</legend>
+                <legend class="filters__title">Стоимость:</legend>
                 <!-- здесь будет range стоимости -->
+                <div class="filters__range-controls">
+                  <div class="filters__scale">
+                      <div class="filters__bar"></div>
+                  </div>
+                    <div class="filters__toggle filters__toggle--min content-box-component"></div>
+                    <div class="filters__toggle filters__toggle--max content-box-component"></div>
+                </div>
+                <div class="filters__price-control">
+                  <label class="filters__price filters__price--min">от
+                    <input class="filters__input filters__input--price" type="text" name="min-price" value="0">
+                  </label>
+                  <label class="filters__price filters__price--max">до
+                    <input class="filters__input filters__input--price" type="text" name="max-price" value="5000">
+                  </label>
+                </div>
+                <!-- <button class="filters__price-button">
+                  <span class="visually-hidden">Показать</span>
+                </button> -->
               </fieldset>
               <fieldset class="filters__fieldset">
-                <legend>Цвет</legend>
+                <legend class="filters__title">Цвет</legend>
                 <ul class="filters__list">
                   <li class="filters__item">
                     <input class="filters__input filters__checkbox visually-hidden" id="black" name="color" type="checkbox" value="black" checked>
@@ -162,7 +180,7 @@
                 </ul>
               </fieldset>
               <fieldset class="filters__fieldset">
-                <legend>Bluetooth</legend>
+                <legend class="filters__title">Bluetooth</legend>
                 <ul class="filters__list">
                   <li class="filters__item">
                     <input class="filters__input filters__radio visually-hidden" id="yes" name="bluetooth" value="yes" type="radio" checked>
@@ -200,7 +218,7 @@
               <li class="catalog__item">
                 <article class="product-card">
                   <h3 class="product-card__title">
-                    <a href="#" class="product-card__link">Профессиональная селфи-палка</a>
+                    <a href="#" class="product-card__link">Профессиональная <span class="no-wrap">селфи-палка</span></a>
                   </h3>
                   <a class="product-card__photo" href="#">
                     <img class="product-card__image" src="img/catalog/item-2.jpg" width="360" height="380" alt="Фото профессиональной селфи-палки">
@@ -278,7 +296,7 @@
           </a>
           <ul class="page-footer__user user-navigation">
             <li class="user-navigation__item">
-              <a class="user-navigation__link user-navigation__link--yellow-login" href="#">Валентин Петухов</a>
+              <a class="user-navigation__link user-navigation__link--yellow-profile" href="#">Валентин Петухов</a>
             </li>
             <li class="user-navigation__item">
               <a class="user-navigation__link user-navigation__link--logout" href="#">Выйти</a>
