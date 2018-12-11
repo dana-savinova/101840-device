@@ -94,7 +94,7 @@
     <div class="page-inner__up-line">
       <div class="container page-inner__wrapper">
         <div class="page-inner__left-column">
-          <span class="page-inner__filter-title">Фильтр:</span>
+          <span class="page-inner__filter-title" aria-hidden="true">Фильтр:</span>
         </div>
         <div class="page-inner__right-column">
           <section class="sorter">
@@ -133,8 +133,7 @@
             <h2 class="visually-hidden filters___title">Фильтр:</h2>
             <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filters__fieldset">
-                <legend class="filters__title">Стоимость:</legend>
-                <!-- здесь будет range стоимости -->
+                <legend class="filters__title">Стоимость</legend>
                 <div class="filters__range-controls">
                   <div class="filters__scale">
                       <div class="filters__bar"></div>
@@ -150,9 +149,6 @@
                     <input class="filters__input filters__input--price" type="text" name="max-price" value="5000">
                   </label>
                 </div>
-                <!-- <button class="filters__price-button">
-                  <span class="visually-hidden">Показать</span>
-                </button> -->
               </fieldset>
               <fieldset class="filters__fieldset">
                 <legend class="filters__title">Цвет</legend>

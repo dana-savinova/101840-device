@@ -1085,7 +1085,6 @@ a {
     outline: none;
 }
 
-
 .brands__link--dji:hover,
 .brands__link--dji:focus {
     background-image: url(../img/dji-logo.jpg);
@@ -1578,6 +1577,8 @@ a {
     height: 57px;
     padding: 0;
 
+    font-size: 0;
+
     opacity: 0.5;
     border: none;
     background-color: transparent;
@@ -1704,6 +1705,7 @@ a {
 
 .feedback__button {
     width: 200px;
+    outline: none;
 }
 
 /*catalog*/
@@ -1776,6 +1778,7 @@ a {
 .breadcrumbs__link:active {
     opacity: 0.1;
 }
+/*filters and goods*/
 
 .page-inner__up-line {
     background-image: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 50%, #ebebeb 50%, #ebebeb 100%);
@@ -1792,14 +1795,14 @@ a {
 .page-inner__left-column {
     display: flex;
 
-    width: 329px;
-    padding-top: 24px;
+    width: 328px;
+    padding-top: 22px;
     padding-bottom: 22px;
-    padding-left: 60px;
+    padding-left: 61px;
 }
 
 .page-inner__filter-title {
-    z-index: 1;
+  /*  z-index: 1;*/
 
     display: block;
 
@@ -1936,14 +1939,14 @@ a {
 }
 
 .filters__form {
-    padding-top: 40px;
+    padding-top: 46px;
 }
 
 .filters__fieldset {
     position: relative;
 
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     padding: 0;
 
     border: none;
@@ -1953,7 +1956,7 @@ a {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
-    padding-top: 18px;
+    padding-top: 12px;
 
     font-family: "Gilroy", "Arial Black", sans-serif;
     font-size: 18px;
@@ -1962,9 +1965,11 @@ a {
     letter-spacing: 0.01em;
 
     color: #000000;
+
+    border-top: 2px solid #000000;
 }
 
-.filters__title::before {
+/*.filters__title::before {
     position: absolute;
     top: 5px;
     left: 0;
@@ -1975,6 +1980,11 @@ a {
     content: "";
 
     background-color: #000000;
+}
+*/
+
+.filters {
+    width: 201px;
 }
 
 .filters__price-control {
@@ -2018,7 +2028,8 @@ a {
 .filters__range-controls {
     position: relative;
 
-    margin-top: 14px;
+    margin-top: 13px;
+    margin-left: -5px;
     margin-bottom: 8px;
 }
 
@@ -2029,7 +2040,7 @@ a {
 }
 
 .filters__bar {
-    width: 53%;
+    width: 55%;
     height: 2px;
 
     background-color: #91c92f;
@@ -2071,7 +2082,7 @@ a {
 }
 
 .filters__toggle--max {
-    left: 53%;
+    left: 55%;
 }
 
 .filters__list {
@@ -2292,9 +2303,13 @@ a {
     background-color: rgba(238, 238, 238, 0.7);
 }
 
-.product-card:hover .product-card__hover-wrapper,
-.product-card__photo:focus + .product-card__hover-wrapper {
+.product-card:hover .product-card__hover-wrapper {
     display: flex;
+}
+
+.product-card__basket-link:focus .product-card__hover-wrapper,
+.product-card__compare-link:focus .product-card__hover-wrapper {
+    z-index: 1;
 }
 
 .product-card__basket-link,
