@@ -53,7 +53,7 @@ window.addEventListener("keydown", function(evt) {
       evt.preventDefault();
       modalFeedback.classList.remove("modal-show");
       modalFeedback.classList.remove("modal-error");
-    } else if (modalMap.classList.contains("modal-show")) {
+    } if (modalMap.classList.contains("modal-show")) {
       evt.preventDefault();
       modalMap.classList.remove("modal-show");
     }
