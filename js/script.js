@@ -67,6 +67,22 @@ formFeedback.addEventListener("submit", function(evt) {
     modalFeedback.classList.remove("modal-error");
     modalFeedback.offsetWidth = modalFeedback.offsetWidth;
     modalFeedback.classList.add("modal-error");
+
+    if (!userFeedback.value) {
+      userFeedback.classList.add("feedback__field--invalid");
+    } else {
+      userFeedback.classList.remove("feedback__field--invalid");
+    }
+    if (!mailFeedback.value) {
+      mailFeedback.classList.add("feedback__field--invalid");
+    } else {
+      mailFeedback.classList.remove("feedback__field--invalid");
+    }
+    if (!textFeedback.value) {
+      textFeedback.classList.add("feedback__field--invalid");
+    } else {
+      textFeedback.classList.remove("feedback__field--invalid");
+    }
   } else {
     if (isStorageSupport) {
     localStorage.setItem("userFeedback", userFeedback.value);}

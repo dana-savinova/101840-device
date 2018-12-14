@@ -1720,6 +1720,10 @@ a {
   background-color: rgba(237,181,181, 0.5);
 }
 
+.feedback__field--invalid {
+  background-color: rgba(237,181,181, 0.5);
+}
+
 .feedback__field::placeholder {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
