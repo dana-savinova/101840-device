@@ -61,7 +61,6 @@ window.addEventListener("keydown", function(evt) {
 });
 
 formFeedback.addEventListener("submit", function(evt) {
-  evt.preventDefault();
   if (!userFeedback.value || !mailFeedback.value || !textFeedback.value ) {
     evt.preventDefault();
     modalFeedback.classList.remove("modal-error");
