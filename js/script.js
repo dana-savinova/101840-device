@@ -116,3 +116,33 @@ function showSlide(number) {
 }
 
 
+
+// Слайдер сервисов
+//соберем "нормальный" массив из всех найденных элементов
+var allServicesTab = Array.from(document.querySelectorAll(".services-tab__link"));
+//отдельно зададим переменные для эл-тов
+var servicesSlide = document.querySelectorAll(".services-list__item");
+var servicesTab = document.querySelectorAll(".services-tab__link");
+//для каждого элемента массива запустим функцию
+  allServicesTab.forEach(function (button, n) {
+    button.addEventListener("click", function () {
+        for (var i = 0; i < servicesSlide.length; i++) {
+        servicesSlide[i].classList.remove("services-list__item--current");
+        allServicesTab[i].classList.remove("services-tab__link--current");
+      }
+
+      servicesTab[n].classList.add("services-tab__link--current");
+      servicesSlide[n].classList.add("services-list__item--current");
+    });
+    button.addEventListener("focus", function () {
+      for (var i = 0; i < servicesSlide.length; i++) {
+        servicesSlide[i].classList.remove("services-list__item--current");
+        allServicesTab[i].classList.remove("services-tab__link--current");
+      }
+
+      servicesTab[n].classList.add("services-tab__link--current");
+      servicesSlide[n].classList.add("services-list__item--current");
+    });
+  });
+
+
