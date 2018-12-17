@@ -53,7 +53,7 @@ window.addEventListener("keydown", function(evt) {
       evt.preventDefault();
       modalFeedback.classList.remove("modal-show");
       modalFeedback.classList.remove("modal-error");
-    } if (modalMap.classList.contains("modal-show")) {
+    } else if (modalMap.classList.contains("modal-show")) {
       evt.preventDefault();
       modalMap.classList.remove("modal-show");
     }
@@ -88,3 +88,28 @@ formFeedback.addEventListener("submit", function(evt) {
   }
 })
 
+// Слайдер товаров
+var slideIndex = 1;
+showSlide(slideIndex);
+
+function currentSlide(number) {
+  showSlide(slideIndex = number);
+}
+
+function showSlide(number) {
+  //соберем коллекцию слайдов
+  var slide = document.querySelectorAll(".promo-slider__item");
+  //соберем коллекцию кнопок-переключателей
+  var toggle =  document.querySelectorAll(".slider-toggles__button");
+  //пройдемся циклом по слайдам и удалим им класс курент и кнопкам добавим атрибут онклик
+  for (var i = 0; i < slide.length; i++) {
+    slide[i].classList.remove("promo-slider__item--current");
+    toggle[i].setAttribute("onclick", "currentSlide(" + (i + 1) + ")");
+  }
+  for (var j = 0; j < toggle.length; j++) {
+    toggle[j].className = toggle[j].className.replace(" slider-toggles__button--current"," ");
+  }
+  slide[slideIndex - 1].classList.add("promo-slider__item--current");
+  toggle[slideIndex - 1].className += " slider-toggles__button--current";
+
+}
