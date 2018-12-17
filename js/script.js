@@ -109,7 +109,10 @@ function showSlide(number) {
   for (var j = 0; j < toggle.length; j++) {
     toggle[j].className = toggle[j].className.replace(" slider-toggles__button--current"," ");
   }
+
   slide[slideIndex - 1].classList.add("promo-slider__item--current");
   toggle[slideIndex - 1].className += " slider-toggles__button--current";
 
 }
+
+
