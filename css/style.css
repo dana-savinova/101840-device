@@ -460,7 +460,7 @@ a {
 
 .catalog-navigation {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 31px;
 
   display: flex;
@@ -2294,14 +2294,18 @@ a {
   flex-wrap: wrap;
 }
 
-.product-card__photo {
+/*.product-card__photo {
   margin-bottom: 24px;
 
   order: -1;
-}
+}*/
 
 .product-card__image {
+  order: -1;
+
+  margin-bottom: 24px;
   max-width: 360px;
+
 }
 
 .product-card__title {

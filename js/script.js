@@ -82,7 +82,7 @@ formFeedback.addEventListener("submit", function(evt) {
     } else {
       textFeedback.classList.remove("feedback__field--invalid");
     }
-  } else {
+    } else {
     if (isStorageSupport) {
     localStorage.setItem("userFeedback", userFeedback.value);}
   }
@@ -97,11 +97,8 @@ function currentSlide(number) {
 }
 
 function showSlide(number) {
-  //соберем коллекцию слайдов
   var slide = document.querySelectorAll(".promo-slider__item");
-  //соберем коллекцию кнопок-переключателей
   var toggle =  document.querySelectorAll(".slider-toggles__button");
-  //пройдемся циклом по слайдам и удалим им класс курент и кнопкам добавим атрибут онклик
   for (var i = 0; i < slide.length; i++) {
     slide[i].classList.remove("promo-slider__item--current");
     toggle[i].setAttribute("onclick", "currentSlide(" + (i + 1) + ")");
@@ -109,40 +106,29 @@ function showSlide(number) {
   for (var j = 0; j < toggle.length; j++) {
     toggle[j].className = toggle[j].className.replace(" slider-toggles__button--current"," ");
   }
-
   slide[slideIndex - 1].classList.add("promo-slider__item--current");
   toggle[slideIndex - 1].className += " slider-toggles__button--current";
-
 }
-
-
-
-// Слайдер сервисов
-//соберем "нормальный" массив из всех найденных элементов
+// Слайдер серивисов
 var allServicesTab = Array.from(document.querySelectorAll(".services-tab__link"));
-//отдельно зададим переменные для эл-тов
 var servicesSlide = document.querySelectorAll(".services-list__item");
 var servicesTab = document.querySelectorAll(".services-tab__link");
-//для каждого элемента массива запустим функцию
-  allServicesTab.forEach(function (button, n) {
-    button.addEventListener("click", function () {
-        for (var i = 0; i < servicesSlide.length; i++) {
-        servicesSlide[i].classList.remove("services-list__item--current");
-        allServicesTab[i].classList.remove("services-tab__link--current");
-      }
-
-      servicesTab[n].classList.add("services-tab__link--current");
-      servicesSlide[n].classList.add("services-list__item--current");
+allServicesTab.forEach(function (button, n) {
+  button.addEventListener("click", function () {
+    for (var i = 0; i < servicesSlide.length; i++) {
+      servicesSlide[i].classList.remove("services-list__item--current");
+      allServicesTab[i].classList.remove("services-tab__link--current");
+    }
+    servicesTab[n].classList.add("services-tab__link--current");
+    servicesSlide[n].classList.add("services-list__item--current");
     });
-    button.addEventListener("focus", function () {
-      for (var i = 0; i < servicesSlide.length; i++) {
-        servicesSlide[i].classList.remove("services-list__item--current");
-        allServicesTab[i].classList.remove("services-tab__link--current");
-      }
 
-      servicesTab[n].classList.add("services-tab__link--current");
-      servicesSlide[n].classList.add("services-list__item--current");
-    });
+  button.addEventListener("focus", function () {
+    for (var i = 0; i < servicesSlide.length; i++) {
+      servicesSlide[i].classList.remove("services-list__item--current");
+      allServicesTab[i].classList.remove("services-tab__link--current");
+    }
+    servicesTab[n].classList.add("services-tab__link--current");
+    servicesSlide[n].classList.add("services-list__item--current");
   });
-
-
+});
