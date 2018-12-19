@@ -2094,7 +2094,7 @@ a {
 
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
-  background-position: 0 -2px;
+  background-position: 0 0;
 }
 
 .filters__checkbox:checked+.filters__label--checkbox:before {
@@ -2109,7 +2109,7 @@ a {
 
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
-  background-position: 0 -2px;
+  background-position: 0 0;
 }
 
 .filters__radio+.filters__label--radio:before {
@@ -2211,7 +2211,7 @@ a {
 .product-card__image {
   order: -1;
   max-width: 360px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .product-card__title {
@@ -2268,6 +2268,7 @@ a {
 
 .product-card:hover .product-card__hover-wrapper {
   display: flex;
+  flex-direction: column;
 }
 
 .product-card__basket-link:focus .product-card__hover-wrapper,
