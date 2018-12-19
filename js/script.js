@@ -19,18 +19,18 @@ try {
   isStorageSupport = false;
 }
 
-contactsBtn.addEventListener("click", function (evt) {
+contactsBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalFeedback.classList.add("modal-show");
   if (storage) {
-      userFeedback.value = storage;
-      mailFeedback.focus();
-    } else {
-      userFeedback.focus();
-    }
+    userFeedback.value = storage;
+    mailFeedback.focus();
+  } else {
+    userFeedback.focus();
+  }
 });
 
-closeFeedback.addEventListener("click", function (evt) {
+closeFeedback.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalFeedback.classList.remove("modal-show");
   modalFeedback.classList.remove("modal-error");
@@ -41,7 +41,7 @@ mapBtn.addEventListener("click", function(evt) {
   modalMap.classList.add("modal-show");
 });
 
-closeMap.addEventListener("click", function (evt) {
+closeMap.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalMap.classList.remove("modal-show");
 });
@@ -61,7 +61,7 @@ window.addEventListener("keydown", function(evt) {
 });
 
 formFeedback.addEventListener("submit", function(evt) {
-  if (!userFeedback.value || !mailFeedback.value || !textFeedback.value ) {
+  if (!userFeedback.value || !mailFeedback.value || !textFeedback.value) {
     evt.preventDefault();
     modalFeedback.classList.remove("modal-error");
     modalFeedback.offsetWidth = modalFeedback.offsetWidth;
@@ -82,54 +82,57 @@ formFeedback.addEventListener("submit", function(evt) {
     } else {
       textFeedback.classList.remove("feedback__field--invalid");
     }
-    } else {
+  } else {
     if (isStorageSupport) {
-    localStorage.setItem("userFeedback", userFeedback.value);}
+      localStorage.setItem("userFeedback", userFeedback.value);
+    }
   }
 });
 
-
-// Слайдер товаров
-var slideIndex = 1;
-showSlide(slideIndex);
-
-function currentSlide(number) {
-  showSlide(slideIndex = number);
-}
-
-function showSlide(number) {
-  var slide = document.querySelectorAll(".promo-slider__item");
-  var toggle =  document.querySelectorAll(".slider-toggles__button");
-  for (var i = 0; i < slide.length; i++) {
-    slide[i].classList.remove("promo-slider__item--current");
-    toggle[i].setAttribute("onclick", "currentSlide(" + (i + 1) + ")");
-  }
-  for (var j = 0; j < toggle.length; j++) {
-    toggle[j].className = toggle[j].className.replace(" slider-toggles__button--current"," ");
-  }
-  slide[slideIndex - 1].classList.add("promo-slider__item--current");
-  toggle[slideIndex - 1].className += " slider-toggles__button--current";
-}
 // Слайдер серивисов
 var allServicesTab = Array.from(document.querySelectorAll(".services-tab__link"));
 var servicesSlide = document.querySelectorAll(".services-list__item");
 var servicesTab = document.querySelectorAll(".services-tab__link");
-allServicesTab.forEach(function (button, n) {
-  button.addEventListener("click", function () {
+allServicesTab.forEach(function(button, n) {
+  button.addEventListener("click", function() {
     for (var i = 0; i < servicesSlide.length; i++) {
       servicesSlide[i].classList.remove("services-list__item--current");
       allServicesTab[i].classList.remove("services-tab__link--current");
     }
     servicesTab[n].classList.add("services-tab__link--current");
     servicesSlide[n].classList.add("services-list__item--current");
-    });
+  });
 
-  button.addEventListener("focus", function () {
+  button.addEventListener("focus", function() {
     for (var i = 0; i < servicesSlide.length; i++) {
       servicesSlide[i].classList.remove("services-list__item--current");
       allServicesTab[i].classList.remove("services-tab__link--current");
     }
     servicesTab[n].classList.add("services-tab__link--current");
     servicesSlide[n].classList.add("services-list__item--current");
+  });
+});
+
+// Слайдер услуг
+var allPopularTab = Array.from(document.querySelectorAll(".slider-toggles__button"));
+var popularSlide = document.querySelectorAll(".promo-slider__item");
+var popularTab = document.querySelectorAll(".slider-toggles__button");
+allPopularTab.forEach(function(button, n) {
+  button.addEventListener("click", function() {
+    for (var i = 0; i < popularSlide.length; i++) {
+      popularSlide[i].classList.remove("promo-slider__item--current");
+      allPopularTab[i].classList.remove("slider-toggles__button--current");
+    }
+    popularTab[n].classList.add("slider-toggles__button--current");
+    popularSlide[n].classList.add("promo-slider__item--current");
+  });
+
+  button.addEventListener("focus", function() {
+    for (var i = 0; i < popularSlide.length; i++) {
+      popularSlide[i].classList.remove("promo-slider__item--current");
+      allPopularTab[i].classList.remove("slider-toggles__button--current");
+    }
+    popularTab[n].classList.add("slider-toggles__button--current");
+    popularSlide[n].classList.add("promo-slider__item--current");
   });
 });
