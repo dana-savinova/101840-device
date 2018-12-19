@@ -478,7 +478,7 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 36px;
 
   list-style: none;
 
@@ -496,6 +496,7 @@ a {
 
   position: absolute;
   z-index: -1;
+  top: 0;
   left: -60px;
 
   width: 1160px;
@@ -2160,7 +2161,7 @@ a {
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: -40px;
 
   width: 27px;
@@ -2168,13 +2169,14 @@ a {
 
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
+  background-position: 0 -2px;
 }
 
 .filters__checkbox:checked + .filters__label--checkbox:before {
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: -40px;
 
   width: 27px;
@@ -2182,6 +2184,7 @@ a {
 
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
+  background-position: 0 -2px;
 }
 
 .filters__radio + .filters__label--radio:before {
