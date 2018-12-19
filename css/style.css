@@ -454,7 +454,6 @@ a {
 .catalog-navigation {
   position: absolute;
   z-index: 1;
-  top: 31px;
 
   display: none;
   width: 640px;
