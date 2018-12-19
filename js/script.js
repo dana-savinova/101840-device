@@ -39,12 +39,12 @@ closeFeedback.addEventListener("click", function (evt) {
 mapBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalMap.classList.add("modal-show");
-})
+});
 
 closeMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalMap.classList.remove("modal-show");
-})
+});
 
 // закрытие по кнопке esc
 window.addEventListener("keydown", function(evt) {
@@ -86,7 +86,8 @@ formFeedback.addEventListener("submit", function(evt) {
     if (isStorageSupport) {
     localStorage.setItem("userFeedback", userFeedback.value);}
   }
-})
+});
+
 
 // Слайдер товаров
 var slideIndex = 1;
