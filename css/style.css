@@ -148,7 +148,7 @@ a {
   position: relative;
 
   margin-top: 40px;
-  padding-bottom: 51px;
+  padding-bottom: 45px;
 
   background-color: #f7e296;
 }
@@ -518,14 +518,14 @@ a {
 
 /*popular items slider*/
 .features {
-  margin-bottom: 103px;
+  margin-bottom: 106px;
 }
 
 .features__wrapper {
   position: relative;
 
   background-color: #ffffff;
-  background-image: linear-gradient(#f7e296 109px, #ffffff 109px);
+  background-image: linear-gradient(#f7e296 111px, #ffffff 111px);
 }
 
 .features-slider,
@@ -619,14 +619,14 @@ a {
 
   width: 560px;
   margin-left: 40px;
-  padding-top: 76px;
+  padding-top: 80px;
 }
 
 .promo-slider__description-wrapper::before {
   content: "";
 
   position: absolute;
-  top: 34px;
+  top: 37px;
   left: 0;
 
   width: 100px;
@@ -717,7 +717,7 @@ a {
 .slider-toggles {
   position: absolute;
   z-index: 1;
-  bottom: 143px;
+  bottom: 138px;
   right: 82px;
 
   display: flex;
@@ -1740,8 +1740,8 @@ a {
 
 .page-inner__title {
   margin: 0;
-  margin-top: 32px;
-  margin-bottom: 19px;
+  margin-top: 36px;
+  margin-bottom: 21px;
   padding: 0;
 
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1850,11 +1850,13 @@ a {
 .sorter {
   display: flex;
   width: 831px;
-  padding-top: 24px;
+  padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 72px;
+  padding-left: 73px;
 
   background-color: #ebebeb;
+
+  align-items: center;
 }
 
 .sorter__list {
@@ -1868,7 +1870,7 @@ a {
 
 .sorter__title {
   margin: 0;
-  margin-right: 53px;
+  margin-right: 56px;
   padding: 0;
 
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1886,7 +1888,7 @@ a {
 }
 
 .sorter-options__item {
-  margin-right: 20px;
+  margin-right: 21px;
 }
 
 .sorter-options__link {
@@ -1918,7 +1920,7 @@ a {
 .sorter-directions__link {
   display: block;
   width: 11px;
-  height: 18px;
+  height: 21px;
 
   opacity: 0.2;
 }
@@ -2132,7 +2134,7 @@ a {
 .filters__radio+.filters__label--radio:before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: -40px;
 
   width: 25px;
@@ -2146,7 +2148,7 @@ a {
   content: "";
 
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: -32px;
 
   width: 9px;
