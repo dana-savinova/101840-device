@@ -553,17 +553,11 @@ a {
 
   display: none;
 
-  counter-increment: my-counter;
-
   opacity: 0;
 }
 
 .promo-slider__item::before {
-  content: "0"counter(my-counter);
-
-  position: absolute;
-  top: -16px;
-  right: 43px;
+  content: "";
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
@@ -572,6 +566,30 @@ a {
   color: #ffffff;
 
   letter-spacing: 0.01em;
+}
+
+.promo-slider__item:nth-child(1)::before {
+  content: "01";
+
+  position: absolute;
+  top: -16px;
+  right: 43px;
+}
+
+.promo-slider__item:nth-child(2)::before {
+  content: "02";
+
+  position: absolute;
+  top: -16px;
+  right: 43px;
+}
+
+.promo-slider__item:nth-child(3)::before {
+  content: "03";
+
+  position: absolute;
+  top: -16px;
+  right: 43px;
 }
 
 .promo-slider__item--current {
