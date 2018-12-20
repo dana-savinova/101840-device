@@ -90,7 +90,7 @@ formFeedback.addEventListener("submit", function(evt) {
 });
 
 // Слайдер серивисов
-var allServicesTab = Array.from(document.querySelectorAll(".services-tab__link"));
+var allServicesTab = Array.prototype.slice.call(document.querySelectorAll(".services-tab__link"));
 var servicesSlide = document.querySelectorAll(".services-list__item");
 var servicesTab = document.querySelectorAll(".services-tab__link");
 allServicesTab.forEach(function(button, n) {
@@ -114,7 +114,7 @@ allServicesTab.forEach(function(button, n) {
 });
 
 // Слайдер услуг
-var allPopularTab = Array.from(document.querySelectorAll(".slider-toggles__button"));
+var allPopularTab = Array.prototype.slice.call(document.querySelectorAll(".slider-toggles__button"));
 var popularSlide = document.querySelectorAll(".promo-slider__item");
 var popularTab = document.querySelectorAll(".slider-toggles__button");
 allPopularTab.forEach(function(button, n) {
